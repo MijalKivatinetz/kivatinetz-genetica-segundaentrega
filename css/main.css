@@ -6,6 +6,7 @@
     padding: 0;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
+    
 }
 
      
@@ -307,80 +308,77 @@ article ul li{
 }
 
 /*==========CONTACTO===========*/
-form{
-  margin: 10px;
-  font-weight: 900;
-  inline-size: 50%;
-  width: 510px;
-  background-color: aliceblue;
-  height: 500px;
-  border:solid 5px #272D2D;
-} 
-fieldset{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 450px;
-}
-legend{
-  font-size: 30px;
+
+
+.formulario{
+  margin: 2%;
+  border: solid 5px #272D2D ;
+  padding: 2%;
+  
+  
 }
 
-.img-cont{
-  margin: 10px;
-  border:solid 5px #272D2D;
+.telefono{
+  
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: max-content;
 }
+.telefono  p{
+  margin: 20px;
+}
+.telefono  div{
+  margin: 20px;
+}
+
+.telefono {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  padding: 2%;
+  border: #272D2D solid 5px;
+
+}
+.enviar:active{
+background-color: yellow;
+color: black;
+}
+
+
 .center-col{
   display: flex;
   justify-content: center;
   
 }
-.contenedor-animacion{
-  display: felx;
-  align-items: center;
-  justify-content: center;
-}
+
+
 .animacionuno{
 
   animation-name: animacionuno;
-  animation-duration: 2s;
+  animation-duration: 3s;
+ 
   
   animation-iteration-count: infinite;
   animation-timing-function: ease;
 }
-@keyframes animacionuno{
-  0%{margin-top: 0;}
-  10%{margin-top: 0;}
 
-  25%{margin-top: 250px;}
-  50%{margin-top: 250px;}
+@keyframes animacionuno {
+  0%{transform: rotate(0);}
+  10%{transform: rotate(0);}
 
-  50%{margin-top: -250px;}
-  75%{margin-top:-250px}
+  10%{transform: rotate(30deg);}
+  50%{transform: rotate(30de);}
 
-  75%{margin-top: 0;}
-  100%{margin-top: 0;}
-}
-.animaciondos{
+  50%{transform: rotate(-30deg);}
+  90%{transform: rotate(-30deg);}
 
-  animation-name: animaciondos;
-  animation-duration: 2s;
-  
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
-@keyframes animaciondos{
-  0%{margin-top: 0;}
-  10%{margin-top: 0;}
-
-  25%{margin-top: -250px;}
-  50%{margin-top: -250px;}
-
-  50%{margin-top:  250px;}
-  75%{margin-top:  250px}
-
-  75%{margin-top: 0;}
-  100%{margin-top: 0;}
+  90%{transform: scale(1.2);}
+  100%{transform: scale(1.2);}
 }
 
 
