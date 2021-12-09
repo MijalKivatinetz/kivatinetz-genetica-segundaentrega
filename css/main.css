@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Meow+Script&family=Roboto:ital,wght@0,100;1,300;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+     
+     /*====NAV====*/
+.arreglo{
+  display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 30px !important;
+}
+.arreglo li a{
+  font-weight: 900;
+  font-style: italic;
+}
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav div img{
+  border: 2px solid black;
+}
+.navbar-brand{
+ 
+  padding-right: 50px;
+  font-style: italic;
+}
+
+
+/*Arreglo el nav traido de boostrap para que quede como yo quiero en responsive*/
+
+@media (min-width: 992px){
+
+  .navbar-brand{
+      display: none;
+      margin-left: 2em !important;
+  }
+  }
+
+@media (max-width: 502px){
+  .navbar-brand{
+    display: none;
+    
+}
+  nav div img{
+  width: 150px;
+  height: 150px;
+}
+
+}
+@media (max-width: 992px){
+  .arreglo{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   background-color: gray;
+}
+
+}
+/*termino de arreglar el nav la parte responsive*/
+/*Estilos CSS para todas las paginas*/
+
+.hover{
+  transition: all 1s ease;   
+}
+.hover:hover{
+  transform: scale(1.5);
+}
+main{
+  grid-area: main;
+}
+header{
+  grid-area: header;
+}
+/*h1*/
+.flex-container-h1{
+  display: flex;
+  justify-content: center;
+  background-color: turquoise;
+}
+.tipografia{
+  font-family: 'Meow Script', cursive;
+  font-weight: bold;
+  
+}
+/*h2*/
+h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/*recuadro de los textos*/
+.pruebo-box{
+  padding: 15px;
+  border: solid 5px #272D2D;
+  margin:  15px;
+  background-color: aliceblue;
+}
+/*link ir arriba*/
+.lnav{
+  grid-area: lnav;
+  font-style: italic;
+  
+}
+.lnav a{
+  font-size: 16px;
+  font-weight: 900;
+  text-decoration: underline;
+  color: aliceblue;
+
+}
+div .lnav{
+  margin: 5px 5px 5px 30px ;
+}
+/*footer*/
+
+footer{
+  margin: 5px 30px 5px 30px;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fflex p{
+  color: aliceblue;
+}
+.icons svg{
+  margin: 5px;
+}
+/*=======INDEX======*/
+ /*grilla index*/
+ .main-container-general{
+  display: grid;
+  
+  grid-template-areas: 
+  "header" 
+  "main"
+  "lnav"
+  "footer"
+  ;
+}
+.cito{
+  margin: 0 20px 0 20px;
+  text-align: justify;
+}
+/*carrusel*/
+.carrusel-container{
+  margin: 20px;
+}
+/*ancho de las fotos index*/
+.pami{
+  width: 250px;
+}
+.jerarquico{
+  width: 250px;
+}
+
+/*seccion lab colegas*/
+
+.laht{
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+}
+.laht img{
+  border: solid 2px black;
+  margin: 0 0 5px 0;
+  width: 250px;
+  
+}
+.laht p{
+  margin: 20px;
+  text-align: justify;
+}
+.tucuman{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.tucuman img{
+  border: solid 2px black;
+  width: 250px;
+}
+.tucuman p{
+  margin: 20px;
+  text-align: justify;
+}
+/*seccion obras sociales*/
+.obrasSociales{
+  display: grid;
+  grid-template-columns: auto  auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.obrasSociales img{
+  border: solid 2px #272D2D;
+}
+/*hasta aquí obras sociales*/
+/*==========ESTUDIOS===========*/
+h3{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+article ul li{
+  list-style-type: square;
+}
+.flex-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.acordion-estudios{
+
+  margin: 10px;
+}
+
+
+
+.margin20{
+  margin: 20px;
+}
+
+.iframe{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: iframe;
+  width: 100%;
+}
+.trans{
+  animation-name: estudios;
+  animation-duration: 2s;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+  
+}
+@keyframes estudios{
+  0%{margin-left: 0;}
+  10%{margin: 0;}
+
+  25%{margin-left: 40px;}
+  50%{margin-left: 40px;}
+
+  50%{margin-right: 40px;}
+  75%{margin-right:40px}
+
+  75%{margin-right: 0;}
+  100%{margin-right: 0;}
+}
+
+
+/*==========NOSOTROS===========*/
+.his{
+  display: flex;
+  align-items: center;
+  
+}
+/*==========LABORATORIO========*/
+.laboratorio{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  grid-area: container;
+}
+.prop{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  line-height: 155%;
+  text-align: justify;
+  font-weight: 100;
+  margin: 15px;
+}
+.flab{
+  display: flex;
+  margin: 15px;
+  border: black solid 2px;
+  display: flex;
+  background-color:#272D2D;
+  flex-direction: column;
+  align-items: center;
+  height: 930px;
+  justify-content: space-between;
+  width: 250px;
+  padding: 10px;
+ 
+}
+.flab img{
+  padding: 0 10px 0 10px;
+  width: 250px;
+}
+
+/*==========CONTACTO===========*/
+form{
+  margin: 10px;
+  font-weight: 900;
+  inline-size: 50%;
+  width: 510px;
+  background-color: aliceblue;
+  height: 500px;
+  border:solid 5px #272D2D;
+} 
+fieldset{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+}
+legend{
+  font-size: 30px;
+}
+
+.img-cont{
+  margin: 10px;
+  border:solid 5px #272D2D;
+}
+.center-col{
+  display: flex;
+  justify-content: center;
+  
+}
+.contenedor-animacion{
+  display: felx;
+  align-items: center;
+  justify-content: center;
+}
+.animacionuno{
+
+  animation-name: animacionuno;
+  animation-duration: 2s;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes animacionuno{
+  0%{margin-top: 0;}
+  10%{margin-top: 0;}
+
+  25%{margin-top: 250px;}
+  50%{margin-top: 250px;}
+
+  50%{margin-top: -250px;}
+  75%{margin-top:-250px}
+
+  75%{margin-top: 0;}
+  100%{margin-top: 0;}
+}
+.animaciondos{
+
+  animation-name: animaciondos;
+  animation-duration: 2s;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes animaciondos{
+  0%{margin-top: 0;}
+  10%{margin-top: 0;}
+
+  25%{margin-top: -250px;}
+  50%{margin-top: -250px;}
+
+  50%{margin-top:  250px;}
+  75%{margin-top:  250px}
+
+  75%{margin-top: 0;}
+  100%{margin-top: 0;}
+}
+
+
+/*==========MEDIA QUERY========*/
+
+/*todas las próximas medias son específicamente del html lab, fue para acomodar el texto en todas las medidas*/
+@media (max-width: 1300px) {
+  /*laboratorio*/
+  .prop{
+    font-size: 45px;
+    line-height: 140%;
+      
+  }
+}
+@media (max-width: 1024px) {
+  /*laboratorio*/
+  .prop{
+   
+    font-size: 40px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 972px) {
+  /*laboratorio*/
+  .prop{
+    font-size: 35px;
+    line-height: 150%;
+  }
+    .flab{
+      display: none;
+    }
+    
+  
+}
+@media (max-width: 425px) {
+  /*laboratorio*/
+  .prop{
+    font-size: 30px;
+    
+  }
+  
+  
+}
+/*hasta aqui las media-querys del lab*/
+
+/*media-query para acomodar animacion de html contacto*/
+@media (max-width: 1292px){
+  .contenedor-animacion{
+    display: none;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+/*media query para index*/
+.bioquimico{
+  display: none;
+}
+.cito p{
+  line-height: 300%;
+  font-size: 2em;
+  font-style: italic;
+}
+.laht p{
+  display: none;
+}
+.tucuman p{
+  display: none;
+}
+.lac{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.ob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+      /*footer*/
+footer  div p{
+  font-size: 1em;
+  font-weight: 700;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*nosotros*/
+.contenido-nosotros{
+  display: none;
+ 
+}
+
+}
+@media (max-width: 320px) {
+
+/*footer*/
+.sitio{
+  display: none;
+}
+footer  div p{
+  font-size: 1em;
+  font-weight: 700;
+}
+/*index*/
+.obrasSociales img{
+  width: 250px;
+}
+.lac{
+  display: none;
+}
+.obrasSociales{
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 30px;
+ 
+}
+.media{
+  display: none;
+}
+/*laboratorio*/
+.prop{
+  font-size: 20px;
+  
+}
+/*ESTUDIOS*/
+.artuno ul{
+  display: none;
+}
+.artdos div{
+  display: none;
+}
+.arttres div{
+  display: none;
+}
+.artcuatro ul{
+  display: none;
+}
+.iframe{
+  display: none;
+}
+.contenido-estudios{
+  display: none;
+ 
+}
+}
+@media (min-width: 321px) {
+  /*estudios*/
+.acordion-estudios{
+  display: none;
+}
+}
+@media (min-width: 769px) {
+/*nosotros*/
+.acordeon-nosotros{
+  display: none;
+}
+}
+
+
+
+
