@@ -91,7 +91,7 @@ header{
 .tipografia{
   font-family: 'Meow Script', cursive;
   font-weight: bold;
-  
+  font-size: 3.2em;
 }
 /*h2*/
 h2{
@@ -424,12 +424,6 @@ color: black;
 }
 /*hasta aqui las media-querys del lab*/
 
-/*media-query para acomodar animacion de html contacto*/
-@media (max-width: 1292px){
-  .contenedor-animacion{
-    display: none;
-  }
-}
 
 
 
@@ -493,7 +487,7 @@ footer  div p{
 }
 /*index*/
 .obrasSociales img{
-  width: 250px;
+  width: 150px;
 }
 .lac{
   display: none;
